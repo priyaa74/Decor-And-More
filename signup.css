@@ -1,0 +1,36 @@
+.rk{
+    text-emphasis-color: black;
+    width: 300px;
+    height: 300px;
+    background-color:wight;
+    color: black;
+    font-style: normal;
+    margin: 100px 1000px 1000px 150px;
+    
+    align-items: center;
+    border: 1px solid black;
+}
+.vk{
+    align-items: center;
+    width: 90%;
+    height: 90%;
+    padding: 3px;
+   margin: 2px;
+
+}
+
+input{
+    width: 80%;
+    height: 80%;
+}
+.kk{
+    
+    padding-left: 5%;
+    background-color: whitesmoke;
+    align-items: center;
+    border: 0.5px solid black;
+}
+{
+    padding: 10%;
+    
+}
