@@ -15,9 +15,17 @@
         body{
            background-color: antiquewhite;
         }
+        a {
+  background-color: red;
+  color: white;
+  padding: 1em 1.5em;
+  text-decoration: none;
+  text-transform: uppercase;
+    }
         </style>
 </head>
 <body>
+    <a href="cart.html">Go To Cart</a>
     <form>
        
         <img src="https://ak1.ostkcdn.com/images/products/is/images/direct/dd5f57a02c2d4d3a2c6c9f4d9ba29a6a40fde971/Contemporary-X-door-Wine-Bar-Cabinet.jpg" alt="">
@@ -54,11 +62,18 @@
 </body>
 </html>
 <script>
-    document.querySelector("button").addEventListener("click", first);
-function first(){
-    var quantitiy = document.getElementById("quantitiy").value;
-    var obj = {};
-    obj.push[quantitiy]
-    console.log(obj);
+document.querySelector("button").addEventListener("click", first);
+    var obj = JSON.parse(localStorage.getItem("object")) || {};
+    
+    function first(){
+    event.preventDefault();
+    var quantitiy = document.getElementById("quantity").value;
+    
+    obj.first = quantitiy;
+     
+      console.log(obj, quantitiy)
+    localStorage.setItem("object", JSON.stringify(obj));    
+    
 }
+
 </script>

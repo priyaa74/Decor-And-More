@@ -18,10 +18,17 @@
         body{
            background-color: antiquewhite;
         }
+        a {
+  background-color: red;
+  color: white;
+  padding: 1em 1.5em;
+  text-decoration: none;
+  text-transform: uppercase;
+    }
         </style>
 </head>
 <body>
-    <div>
+    <a href="cart.html">Go To Cart</a>
         
         <img src="https://ak1.ostkcdn.com/images/products/is/images/direct/ecb0883ca76478cc1f372b8002b50e5083225a2e/Wood-and-Metal-63in.-H-5-Tier-Etagere.jpg" alt="">
         <h3>5-Shelf 63" H x 23.62" W Wood and Metal Etagere Bookcase</h3>
@@ -30,11 +37,11 @@
         </h3>
         
         <select name="quantity" id="quantity">
-            <option value="">Quantity : 1</option>
-            <option value="">Quantity : 2</option>
-            <option value="">Quantity : 3</option>
-            <option value="">Quantity : 4</option>
-            <option value="">Quantity : 5</option>
+            <option value="1">Quantity : 1</option>
+            <option value="2">Quantity : 2</option>
+            <option value="3">Quantity : 3</option>
+            <option value="4">Quantity : 4</option>
+            <option value="5">Quantity : 5</option>
                                                       
         </select>
         <button>Add To Cart</button>
@@ -70,3 +77,18 @@
     </div>
 </body>
 </html>
+<script>
+    document.querySelector("button").addEventListener("click", first);
+        var obj = JSON.parse(localStorage.getItem("object")) || {};
+        
+        function first(){
+        event.preventDefault();
+        var quantitiy = document.getElementById("quantity").value;
+        
+        obj.fifth = quantitiy;
+         console.log(obj, quantitiy);
+        localStorage.setItem("object", JSON.stringify(obj));    
+        
+    }
+    
+    </script>
