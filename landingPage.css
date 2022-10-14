@@ -71,7 +71,10 @@ hr{
 #list {
     overflow: hidden;
   }
-  
+  a{
+    text-decoration: none;
+    color: black;
+  }
   .topnav a {
     float: left;
     display: block;
@@ -81,7 +84,7 @@ hr{
     font-size: 16px;
   }
   
-  .topnav a:hover {
+   a:hover {
    text-decoration: underline;
   }
   
