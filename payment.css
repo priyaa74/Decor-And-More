@@ -1,0 +1,11 @@
+#address{
+    border: solid black;
+    width: 60%;
+    margin: auto;
+}
+#logo{
+    display: block;
+    width: 18%;
+    height: 80px;
+    margin: auto;
+}
