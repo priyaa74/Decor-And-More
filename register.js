@@ -21,9 +21,10 @@ e.preventDefault();
  else{
     alert("Account has been created successfully");
  localStorage.setItem("userData",JSON.stringify(regData));
+ window.location.href='signup.html';
  }
 }
-let userData = JSON.parse(localStorage.getItem("userData"))
+let userData = JSON.parse(localStorage.getItem("userData"))||[];
 document.querySelector("#logIn").addEventListener("submit",compare);
 
 function compare(event){
@@ -41,6 +42,7 @@ function compare(event){
     }
     else{
         alert("Login success. Explore your styles!")
-        window.location.href='navbar.html';
+        localStorage.removeItem("userData");
+        window.location.href='index.html';
     }
 }
