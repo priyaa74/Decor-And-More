@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            display: inline-block;
+
+            margin: 10px;
+            justify-content: right;
+        }
+        img{
+            width: 500px;
+        }
+        body{
+           background-color: antiquewhite;
+        }
+        a {
+  background-color: red;
+  color: white;
+  padding: 1em 1.5em;
+  text-decoration: none;
+  text-transform: uppercase;
+    }
+        </style>
+</head>
+<body>
+    <a href="cart.html">Go To Cart</a>
+    <div>
+        
+        <img src="https://ak1.ostkcdn.com/images/products/is/images/direct/7b1832944b366674a1c1079886a6c29054630cc9/Brookside-Vertical-Bar-Traditional-Metal-Headboard.jpg" alt="">
+        <h3>Brookside Ada Vertical Bar Traditional Metal Headboard</h3>
+        <span style="font-size: large; color:yellow;">&starf;&starf;&starf;&starf; </span>161
+        <h3>Sale Starts atINR743127</h3>
+        <select name="quantity" id="quantity">
+            <option value="1">Quantity : 1</option>
+            <option value="2">Quantity : 2</option>
+            <option value="3">Quantity : 3</option>
+            <option value="4">Quantity : 4</option>
+            <option value="5">Quantity : 5</option>
+                                                      
+        </select>
+        <button>Add To Cart</button>
+        <p>ITEM# 36647220</p>
+        <button>Favorits</button>
+        <div>
+            <h3>Details</h3>
+            <br>
+            <p>ITEM#: 36647220
+               <br>
+                Designed to add a contemporary feel to your bedroom, this traditional metal headboard by Brookside incorporates vertical steel panels with a decorative flair the whole family will love. From the kid's room to the master suite, this headboard will become the focal point of any room it's in without stealing the entire show. Shipped in a box with all necessary hardware and modification plates, all you'll need is a partner and 10 free minutes to go from box to ready-to-use. Available in California King, King, Queen, Full, and Twin sizes, this headboard will instantly upgrade your space with effortless style.
+                <br>
+                Product Features:<br>
+                All steel headboard with a matte black finish is a sturdy and stylish option to finish any bedroom in your home<br>
+                Designed with decorative vertical panels that compliment any décor to create a modern yet feminine feel<br>
+                Headboard sits at 40 inches tall; available in California King, King, Queen, Full, and Twin sizes<br>
+                All hardware is included for quick and easy setup; modification plates are included to easily update your current bed frame<br>
+                Shipped in a box right to your front door for optimal convenience and backed by a one-year warranty<br>
+                Dimensions:<br>
+                California King: 70" W x 41" H x 1.5" D
+                Full: 52" W x 41" W x 1.5" D
+                King: 74" W x 41" H x 1.5" D
+                Queen: 58" W x 41" H x 1.5" D
+                Twin: 37" W x 41" H x 1.5" D  </p>
+        </div>
+    </div>
+</body>
+</html>
+<script>
+  document.querySelector("button").addEventListener("click", first);
+    var obj = JSON.parse(localStorage.getItem("object")) || {};
+    
+    function first(){
+    event.preventDefault();
+    var quantitiy = document.getElementById("quantity").value;
+    // var product = {"second": quantitiy}
+    obj.second = quantitiy;
+     
+      console.log(obj, quantitiy)
+    localStorage.setItem("object", JSON.stringify(obj));    
+    
+}
+ 
+</script>

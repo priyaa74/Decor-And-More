@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            display: inline-block;
+
+            margin: 10px;
+            justify-content: right;
+        }
+        body{
+           background-color: antiquewhite;
+        }
+        a {
+  background-color: red;
+  color: white;
+  padding: 1em 1.5em;
+  text-decoration: none;
+  text-transform: uppercase;
+    }
+        </style>
+</head>
+<body>
+    <a href="cart.html">Go To Cart</a>
+    <form>
+       
+        <img src="https://ak1.ostkcdn.com/images/products/is/images/direct/6f2f4c20d2f89bed074d54fbdf2ad920533a8657/SAFAVIEH-Vision-Tanasa-Modern-Ombre-Tonal-Rug.jpg?imwidth=480&impolicy=medium" alt="">
+        <h3>SAFAVIEH Vision Tanasa Modern Ombre Tonal Rug</h3>
+        <span style="font-size: large; color:yellow;">&starf;&starf;&starf;&starf; </span> 6398 Reviews
+
+        <h3>Sale Starts atINR226757</h3>
+        <select name="quantity" id="quantity">
+            <option value="1">Quantity : 1</option>
+            <option value="2">Quantity : 2</option>
+            <option value="3">Quantity : 3</option>
+            <option value="3">Quantity : 4</option>
+            <option value="4">Quantity : 5</option>
+                                                      
+        </select>
+        <button id="cart">Add To Cart</button>
+        <p>ITEM# 17197764</p>
+        <button>Favorits</button>
+    </form>
+            <h3>Details</h3>
+            <p>The Vision Area Rug Collection features sophisticated, soft tone-on-tone area rugs, perfectly styled to energize today's urban-chic contemporary décor.<br> Rich solid colors woven into a soft white pile add dimension and texture to the flowing, abstract lines of color that radiate from every rug in this dazzling collection.
+
+                Features:<br>
+                Pile height is 0.25 - 0.5 inch<br>
+                Modern & Contemporary Style<br>
+                Chic Ombre Pattern<br>
+                Non-shedding<br>
+                Kid and pet-friendly<br>
+                Weave Type: Machine-Made<br>
+                Design beautifully enhances any room of the home, from the living room, dining room, bedroom, entryway, nursery, kid's room, playroom, dorm room, study, or home office<br>
+                Featured in SAFAVIEH's Vision Collection<br>
+                
+                </p>
+        </div>
+    </div>
+</body>
+</html>
+<script>
+    document.querySelector("button").addEventListener("click", first);
+        var obj = JSON.parse(localStorage.getItem("objectr")) || {};
+        
+        function first(){
+        event.preventDefault();
+        var quantitiy = document.getElementById("quantity").value;
+        
+        obj.fourth = quantitiy;
+         
+          console.log(obj, quantitiy)
+        localStorage.setItem("objectr", JSON.stringify(obj));    
+        
+    }
+    
+    </script>
