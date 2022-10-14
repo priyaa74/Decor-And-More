@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p{
+            font-style: italic;
+            background-color: aliceblue;
+            color: brown;
+        }
+        a {
+  background-color: red;
+  color: white;
+  padding: 1em 1.5em;
+  text-decoration: none;
+  text-transform: uppercase;
+    }
+    </style>
+</head>
+<body>
+    <a href="payment.html">Payment Page</a>
+    <br><br>
+    <div>
+        <img src="https://ak1.ostkcdn.com/images/products/is/images/direct/dd5f57a02c2d4d3a2c6c9f4d9ba29a6a40fde971/Contemporary-X-door-Wine-Bar-Cabinet.jpg?imwidth=480&impolicy=medium" alt="">
+        <p>TOTAL FURNITURE : <span id="totalfur"></span></p>
+    </div>
+   <div>
+    <img src="https://ak1.ostkcdn.com/images/products/is/images/direct/709fee12c5b7e2b834fe98b74814982b8b9a1d15/SAFAVIEH-Madison-Diederike-Boho-Medallion-Distressed-Rug.jpg?imwidth=480&impolicy=medium" alt="">
+    <p>TOTAL RUGS : <span id="totalrug"></span></p>
+   </div>
+   
+    <button>Calcuate</button>
+    <p>FINAL PRICE : <span id="finalpri"></span></p>
+    <button id="clear">Clear Cart</button>
+    
+   
+</body>
+</html>
+
+<script>
+    var product = JSON.parse(localStorage.getItem("object"));
+    var productrug = JSON.parse(localStorage.getItem("objectr"));
+    var objr = Object.entries(productrug);
+   var obj = Object.entries(product);
+   var total = 0;
+   var totalrug = 0;
+   for (var i = 0; i<obj.length; i++) {
+    var ab = obj[i];
+       if(ab[0] === "first"){
+        total = total + (2603686 * ab[1])
+       }
+       if(ab[0] === "second"){
+        total = total + (743127 * ab[1])
+       }
+       if(ab[0] === "third"){
+        total = total + (2240527 * ab[1])
+       }
+       if(ab[0] === "fourth"){
+        total = total + (667755 * ab[1])
+       }
+       if(ab[0] === "fifth"){
+        total = total + (1240494 * ab[1])
+       }
+       }
+       
+       for (var i = 0; i<objr.length; i++) {
+        var ab1 = objr[i];
+       if(ab1[0] === "first"){
+        totalrug = totalrug + (321498 * ab1[1])
+       }
+       if(ab1[0] === "second"){
+        totalrug = totalrug + (208211 * ab1[1])
+       }
+       if(ab1[0] === "third"){
+        totalrug = totalrug + (184000 * ab1[1])
+       }
+       if(ab1[0] === "fourth"){
+        totalrug = totalrug + (226757 * ab1[1])
+       }
+       if(ab1[0] === "fifth"){
+        totalrug = totalrug + (433871 * ab1[1])
+       }
+       }
+
+      localStorage.setItem("totalfur", total);
+      localStorage.setItem("totalrug", totalrug);
+      var finalpri = total + totalrug;
+      document.getElementById("totalfur").innerText = total;
+        document.getElementById("totalrug").innerText = totalrug;
+      document.querySelector("button").addEventListener("click", final);
+      function final(){
+        
+        document.getElementById("finalpri").innerText = finalpri;
+      }
+      
+      document.getElementById("clear").addEventListener("click", clear);
+      function clear(){
+        localStorage.clear();
+      }
+      localStorage.setItem("finalprice", finalpri);
+    // console.log(total);
+</script>

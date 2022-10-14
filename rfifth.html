@@ -18,9 +18,17 @@
         body{
            background-color: antiquewhite;
         }
+        a {
+  background-color: red;
+  color: white;
+  padding: 1em 1.5em;
+  text-decoration: none;
+  text-transform: uppercase;
+    }
         </style>
 </head>
 <body>
+    <a href="cart.html">Go To Cart</a>
     <form>
        
         <img src="https://ak1.ostkcdn.com/images/products/is/images/direct/09f48f7d39a3e45d63bac25bdee8cc82a02504c5/Elmas-Traditional-Persian-Medallion-Area-Rug.jpg" alt="">
@@ -63,3 +71,19 @@
     </div>
 </body>
 </html>
+<script>
+    document.querySelector("button").addEventListener("click", first);
+        var obj = JSON.parse(localStorage.getItem("objectr")) || {};
+        
+        function first(){
+        event.preventDefault();
+        var quantitiy = document.getElementById("quantity").value;
+        
+        obj.fifth = quantitiy;
+         
+          console.log(obj, quantitiy)
+        localStorage.setItem("objectr", JSON.stringify(obj));    
+        
+    }
+    
+    </script>
