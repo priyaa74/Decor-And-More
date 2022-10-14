@@ -153,9 +153,6 @@ body {
     text-decoration: underline;
     color: blueviolet;
   }
-  #errorMessage {
-    display: none;
-  }
   #rk > p {
     width: 51%;
     margin: 10px auto;
@@ -199,4 +196,3 @@ body {
     .vk .vertical_line{
       display: none;
     }
-  } 
