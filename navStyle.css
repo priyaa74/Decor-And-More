@@ -88,6 +88,7 @@ hr{
   .topnav .icon {
     display: none;
   }
+
   /* Image over image style */
 #sale{
     position: relative;
@@ -229,7 +230,7 @@ gap: 20px;
   transition: background-color 0.6s ease;
 }
 .active, .dot:hover {
-  background-color: #717171;
+  background-color: rgb(233, 13, 13);
 }
 .fade {
   animation-name: fade;
@@ -248,6 +249,8 @@ gap: 20px;
     justify-content: space-evenly;
     height: 400px;
     background-color: rgb(99, 98, 98);
+    overflow: hidden;
+    white-space: nowrap;
 
 }
 
@@ -273,6 +276,8 @@ gap: 20px;
     justify-content: space-between;
     height: 80px;
     background-color: rgb(47, 45, 45);
+    overflow: hidden;
+    white-space: nowrap;
 }
 
 
@@ -295,7 +300,7 @@ gap: 20px;
 #footer2>div:last-child ul {
     display: flex;
     align-items: center;
-margin-left: 400px;
+margin-left: 300px;
 }
 
 #footer2>div:last-child li {
@@ -322,7 +327,6 @@ margin-left: 400px;
 
 /* Media Queries(Responsive) */
 @media all and (max-width: 765px) and (min-width:185px) {
-    /* Medium Screen Styles  */
     #limitedDeals{
         grid-template-columns: repeat(3, 1fr);
     }
