@@ -1,0 +1,358 @@
+*{
+    padding:0px;
+    margin: 0px;
+}
+/* Navigation style */
+#navFreeze{
+    overflow: hidden;
+    background-color:white;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 9999;
+}
+.box{
+    margin: auto 80px;
+}
+.first{
+    background-color:rgb(242, 238, 245);
+    padding-top: 0.5px; 
+    margin-bottom: 10px;
+}
+#flag{
+    height:18px;
+    border-radius: 8px;
+}
+#nav{
+    display: flex;
+   height:65px;
+}
+#nav > div{
+    margin: 10px;
+}
+#logo{
+    width:14%;
+}
+/* Input bar */
+#search{
+    width:90%;
+    font-size: 16px;
+    margin: 2px 10px 22px 30px;
+    background-color:rgb(242, 238, 245);
+    border: 0.5px solid rgba(58, 58, 144, 0.448);
+    border-radius: 5px 0 0 5px;
+}
+/* Input div */
+#magnify{
+    display:flex;
+    width:90%;
+    height:60px;
+    margin:auto;
+    margin-bottom:20px;
+}
+#magnify > div{
+    background-color: red;
+    color: white;
+    margin-left: -10px;
+    margin-top: 2px;
+    width: 30px;
+    height:36px;
+    text-align: center;
+    border-radius: 0 5px 5px 0;
+}
+i{
+    font-size: 20px;
+    margin-top: 8px;
+}
+hr{
+    border: 1 solid ;
+}
+/* Items List Style */
+#list {
+    overflow: hidden;
+  }
+  a{
+    text-decoration: none;
+    color: black;
+  }
+  .topnav a {
+    float: left;
+    display: block;
+    color: black;
+    padding: 4px 26px;
+    text-decoration: none;
+    font-size: 16px;
+  }
+  
+   a:hover {
+   text-decoration: underline;
+  }
+  
+  .topnav .icon {
+    display: none;
+  }
+
+  /* Image over image style */
+#sale{
+    position: relative;
+    top: 80px;
+    left: auto;
+    height: 600px;
+}
+.image1{
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    height: 550px;
+    opacity: 0.8;
+}
+.image2{
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 100%;
+    margin: 8px auto;
+    height: 600px;
+}
+h2{
+    text-align: center;
+    font-size: 34px;
+    margin: 60px 0 20px 0;
+}
+/* Limited Sale Template Style */
+#limitedDeals {
+display: grid;
+grid-template-columns: repeat(6,1fr);
+gap: 20px;
+}
+#limitedDeals p{
+    text-align: center;
+    font-weight: bold;
+}
+#limitedDeals > div{
+    background-color: rgb(242, 238, 245);
+}
+#limitedDeals > div >img{
+    width:100%;
+}
+
+/* Living Room Style(Text Over Image) */
+.livingRoomTemplate{
+    position: relative;
+    top: 50px;
+    left: auto;
+    height: 600px;
+}
+.livingRoomImage{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 550px;
+    opacity: 0.8;
+}
+.text{
+    position: absolute;
+    left: 80px;
+    color: rgb(197, 56, 56);
+}
+.text h3{
+    font-size: 60px;
+}
+.text h3 span{
+    font-size: 100px;
+}
+.text p{
+    font-size: 30px;
+}
+.text button{
+    font-size: 18px;
+    border: solid white;
+    background-color: white;
+    padding: 18px;
+    border-radius: 8px;
+}
+
+/* Fresh Finds(Products Style) */
+#freshFinds{
+display: grid;
+grid-template-columns: repeat(6,1fr);
+gap: 20px;
+}
+#freshFinds p{
+    text-align: center;
+    font-size: 20px;
+}
+#freshFinds > div >img{
+    width:100%;
+}
+
+
+/* Slideshow Images Style */
+.slideshow-container {
+  max-width: 30%;
+  position: relative;
+  margin: auto;
+}
+.mySlides {
+  display: none;
+  text-align: center;
+}
+
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.active, .dot:hover {
+  background-color: rgb(233, 13, 13);
+}
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+
+/* Footer 1 Style */
+#footer1 {
+    display: flex;
+    justify-content: space-evenly;
+    height: 400px;
+    background-color: rgb(99, 98, 98);
+    overflow: hidden;
+    white-space: nowrap;
+
+}
+
+#footer1>div {
+    margin: 60px auto;
+}
+
+#footer1>div ul li {
+    list-style: none;
+    margin: 10px;
+    color: white;
+    padding: 8px;
+
+}
+
+#footer1 li:first-child {
+    font-weight: bold;
+}
+
+/* Footer 2 style */
+#footer2 {
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    background-color: rgb(47, 45, 45);
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+
+#footer2>div:first-child {
+    
+    text-align: center;
+    /* width: 60%; */
+    margin-top: 40px;
+    margin-left: 160px;
+    text-align: left;
+    color: white;
+}
+
+#footer2>div:last-child {
+    text-align: center;
+    margin: auto;
+    color: white;
+}
+
+#footer2>div:last-child ul {
+    display: flex;
+    align-items: center;
+margin-left: 300px;
+}
+
+#footer2>div:last-child li {
+
+    list-style: none;
+    float: left;
+    margin: auto 0px;
+    padding: 3px;
+    margin-left: 45px;
+
+
+}
+
+#footer2 img {
+    height: 28px;
+}
+
+#footer2 li:last-child {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+
+/* Media Queries(Responsive) */
+@media all and (max-width: 765px) and (min-width:185px) {
+    #limitedDeals{
+        grid-template-columns: repeat(3, 1fr);
+    }
+    #freshFinds{
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .topnav a:not(:first-child){
+        display: none;}
+    .topnav a.icon {
+      float: right;
+      display: block;
+    }
+        .topnav.responsive {
+            position: relative;}
+        .topnav.responsive a.icon {
+          position: absolute;
+          right: 0;
+          top: 0;
+        }
+        .topnav.responsive a {
+          float: none;
+          display: block;
+          text-align: left;
+        }
+  }
+
