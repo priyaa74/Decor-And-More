@@ -1,4 +1,4 @@
-# Decor-And-More
+# Decor-And-More(OverStock Clone)
 Live- https://stockover-clone.netlify.app
 
 A place for every room of your mood.
