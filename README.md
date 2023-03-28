@@ -14,3 +14,5 @@ Techstack used in this repo-
 1. HTML
 2. CSS
 3. JavaScript
+
+![](https://github.com/priyaa74/Decor-And-More/blob/main/stockOverAnim.gif)
